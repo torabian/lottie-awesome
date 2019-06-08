@@ -39,17 +39,20 @@ function render(buttonName, data) {
     let isRevert = true;
     // Once animation is complete go back to frame 0 on timeline
     animation.addEventListener('complete', function() {
-      setTimeout(() => {
-        if (isRevert) {
-          animation.setDirection(-1);
-          animation.play();
-          isRevert = false;
-        } else {
-          animation.setDirection(1);
-          animation.goToAndPlay(0);
-          isRevert = true;
-        }
-      }, 3000);
+      setTimeout(
+        () => {
+          if (isRevert) {
+            animation.setDirection(-1);
+            animation.play();
+            isRevert = false;
+          } else {
+            animation.setDirection(1);
+            animation.goToAndPlay(0);
+            isRevert = true;
+          }
+        },
+        isRevert ? 3000 : 100
+      );
     });
   });
 }

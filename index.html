@@ -12,22 +12,63 @@
       content="Need animated font-awesome? Get lottie-awesome, smooth and buttery animated font la-icon"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <script src="docs-script.js"></script>
     <link rel="stylesheet" href="docs-style.css" />
   </head>
   <body>
-    <h1>Lottie awesome</h1>
-    <h2>
-      Lottie animated icons based on font-awesome and other open-source fonts
-    </h2>
+    <div class="text-center">
+      <h1>Lottie awesome</h1>
+      <h2>
+        Lottie animated icons based on font-awesome and other open-source fonts
+      </h2>
+    </div>
 
-    <div id="circle" class="la-icon"></div>
-    <div id="cross" class="la-icon"></div>
-    <div id="triangle" class="la-icon"></div>
-    <div id="rectangle" class="la-icon"></div>
-    <div id="up" class="la-icon"></div>
-    <div id="down" class="la-icon"></div>
-    <div id="left" class="la-icon"></div>
-    <div id="right" class="la-icon"></div>
+    <div id="app">
+      <div class="icons-container">
+        <div class="icon-container" v-for="icon in icons">
+          <div v-bind:id="icon.name" class="la-icon"></div>
+          <span class="icon-name">{{ icon.name }}</span>
+        </div>
+      </div>
+    </div>
   </body>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        icons: [
+          {
+            name: 'circle'
+          },
+          {
+            name: 'cross'
+          },
+          {
+            name: 'triangle'
+          },
+          {
+            name: 'rectangle'
+          },
+          {
+            name: 'up'
+          },
+          {
+            name: 'down'
+          },
+          {
+            name: 'left'
+          },
+          {
+            name: 'right'
+          }
+        ]
+      }
+    });
+  </script>
 </html>

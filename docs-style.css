@@ -1,5 +1,25 @@
+.icons-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  min-width: 180px;
+}
 .la-icon {
-  float: left;
+  flex: 1;
   width: 100px;
+  margin: auto;
   height: 100px;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.text-center {
+  text-align: center;
 }
