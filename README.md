@@ -5,6 +5,7 @@ Fontawesome and some other famous fonts libraries converted to lottie animations
 ## Demo, Preview, Icons list
 To take a look at the icons, try here https://torabian.github.io/lottie-awesome
 
+![Lottie awesome - animated font awesome and icons](screenshot.png)
 
 
 ## License
