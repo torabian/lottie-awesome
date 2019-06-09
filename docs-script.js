@@ -5,6 +5,7 @@ function randomIntFromInterval(min, max) {
   // min and max included
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
+
 function renderButtons(list) {
   for (let item of list) {
     fetch(getButtonUrl(item)).then(async data => {
@@ -56,3 +57,12 @@ function render(buttonName, data) {
     });
   });
 }
+function loadFonts(list) {
+  for (let item of list) {
+    fetch(`fonts/${item}.json`).then(async data => {
+      render(item, await data.json());
+    });
+  }
+}
+
+loadFonts(['arrow-alt-circle-down', 'chart-bar', 'check-square']);
