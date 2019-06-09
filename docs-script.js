@@ -65,4 +65,13 @@ function loadFonts(list) {
   }
 }
 
-loadFonts(['arrow-alt-circle-down', 'chart-bar', 'check-square']);
+const fonts = [
+  'arrow-alt-circle-down',
+  'chart-bar',
+  'check-square',
+  'cloud-download-alt',
+  'cloud-upload-alt',
+  'comment-dots'
+];
+
+loadFonts(fonts);

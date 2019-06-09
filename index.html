@@ -20,18 +20,18 @@
     <link rel="stylesheet" href="docs-style.css" />
   </head>
   <body>
-    <div class="text-center">
+    <div>
       <h1>Lottie awesome</h1>
       <h2>
         Lottie animated icons based on font-awesome and other open-source fonts
       </h2>
     </div>
 
-    <div id="app">
+    <div class="doc-icons-list" id="app">
       <div class="icons-container">
         <div class="icon-container" v-for="icon in icons">
-          <div v-bind:id="icon.name" class="la-icon"></div>
-          <span class="icon-name">{{ icon.name }}</span>
+          <div v-bind:id="icon" class="la-icon"></div>
+          <span class="icon-name">{{ icon }}</span>
         </div>
       </div>
     </div>
@@ -42,39 +42,12 @@
       el: '#app',
       data: {
         icons: [
-          {
-            name: 'circle'
-          },
-          {
-            name: 'cross'
-          },
-          {
-            name: 'triangle'
-          },
-          {
-            name: 'rectangle'
-          },
-          {
-            name: 'up'
-          },
-          {
-            name: 'down'
-          },
-          {
-            name: 'left'
-          },
-          {
-            name: 'right'
-          },
-          {
-            name: 'arrow-alt-circle-down'
-          },
-          {
-            name: 'chart-bar'
-          },
-          {
-            name: 'check-square'
-          }
+          'arrow-alt-circle-down',
+          'chart-bar',
+          'check-square',
+          'cloud-download-alt',
+          'cloud-upload-alt',
+          'comment-dots'
         ]
       }
     });

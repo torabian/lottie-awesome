@@ -11,9 +11,9 @@
 }
 .la-icon {
   flex: 1;
-  width: 100px;
+  width: 40px;
   margin: auto;
-  height: 100px;
+ 
 }
 
 * {
@@ -22,4 +22,18 @@
 
 .text-center {
   text-align: center;
+}
+
+
+h1 {
+  font-size: 21px;
+}
+
+
+h2 {
+  font-size: 17px;
+}
+
+.doc-icons-list {
+  margin-top: 60px;
 }

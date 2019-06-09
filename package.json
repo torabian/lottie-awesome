@@ -1,0 +1,19 @@
+{
+  "name": "lottie-awesome",
+  "version": "1.0.0",
+  "description": "Fontawesome and some other famous fonts libraries converted to lottie animations. Useful for web and mobile projects.",
+  "main": "docs-script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torabian/lottie-awesome.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/torabian/lottie-awesome/issues"
+  },
+  "homepage": "https://github.com/torabian/lottie-awesome#readme"
+}
