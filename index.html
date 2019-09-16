@@ -20,24 +20,37 @@
     <link rel="stylesheet" href="docs-style.css" />
   </head>
   <body>
-    <div>
-      <h1>Lottie awesome</h1>
-      <h2>
-        Lottie animated icons based on font-awesome and other open-source fonts
-      </h2>
-    </div>
-
-    <div class="doc-icons-list" id="app">
+    <div id="app">
+      <div>
+        <h1>Lottie awesome</h1>
+        <p>
+          Lottie awesome is a set of icons and scripts for controlling
+          AfterEffects bodymovin (also called lottie) animations.
+        </p>
+        <h3>How to use?</h3>
+        <p>
+          Clone the repository, or download the zip file from
+          <a href="https://github.com/torabian/lottie-awesome"
+            >https://github.com/torabian/lottie-awesome</a
+          >, and you can access the fonts folder all json file you can see here,
+          then import it using your lottie environment
+        </p>
+      </div>
       <div class="icons-container">
         <div class="icon-container" v-for="icon in icons">
           <div v-bind:id="icon" class="la-icon"></div>
           <span class="icon-name">{{ icon }}</span>
         </div>
-
-        <h2>
-          Lottie Awesome IOT icons component
-        </h2>
       </div>
+
+      <h2>
+        Lottie Awesome IOT icons component
+      </h2>
+      <p>
+        Animated IOT Icons (Svg, Lottie) done by after effects. Use for
+        different purposes, such as home automation or PLC visual ladder
+      </p>
+
       <div class="icons-container">
         <div class="icon-container" v-for="icon in largeIcons">
           <div v-bind:id="icon" class="component-icon"></div>

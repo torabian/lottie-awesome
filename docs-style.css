@@ -1,3 +1,7 @@
+body {
+  background-color: #f8f9fa;
+}
+
 .icons-container {
   display: flex;
   flex-wrap: wrap;
@@ -16,7 +20,7 @@
 }
 .component-icon {
   flex: 1;
-  width: 160px;
+  width: 75px;
   margin: auto;
 }
 
@@ -30,12 +34,19 @@
 
 
 h1 {
-  font-size: 21px;
+  font-size: 1.5625rem;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #e9ecef;
+  margin-top: 20px;
 }
 
+svg {
+  fill: #495057;
+}
 
 h2 {
-  font-size: 17px;
+  font-size: 21px;
+  margin-top: 50px;
 }
 
 .doc-icons-list {

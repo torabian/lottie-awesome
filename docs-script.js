@@ -70,8 +70,7 @@ const fonts = [
   'chart-bar',
   'check-square',
   'cloud-download-alt',
-  'cloud-upload-alt',
-  'comment-dots'
+  'cloud-upload-alt'
 ];
 
 const largeIcons = ['temperature', 'fan', 'data', 'humidity'];
