@@ -33,24 +33,28 @@
           <div v-bind:id="icon" class="la-icon"></div>
           <span class="icon-name">{{ icon }}</span>
         </div>
+
+        <h2>
+          Lottie Awesome IOT icons component
+        </h2>
+      </div>
+      <div class="icons-container">
+        <div class="icon-container" v-for="icon in largeIcons">
+          <div v-bind:id="icon" class="component-icon"></div>
+          <span class="icon-name">{{ icon }}</span>
+        </div>
       </div>
     </div>
   </body>
 
+  <script src="docs-script.js"></script>
   <script>
     var app = new Vue({
       el: '#app',
       data: {
-        icons: [
-          'arrow-alt-circle-down',
-          'chart-bar',
-          'check-square',
-          'cloud-download-alt',
-          'cloud-upload-alt',
-          'comment-dots'
-        ]
+        icons: fonts,
+        largeIcons: largeIcons
       }
     });
   </script>
-  <script src="docs-script.js"></script>
 </html>

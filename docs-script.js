@@ -74,4 +74,7 @@ const fonts = [
   'comment-dots'
 ];
 
+const largeIcons = ['temperature', 'fan', 'data', 'humidity'];
+
 loadFonts(fonts);
+loadFonts(largeIcons);

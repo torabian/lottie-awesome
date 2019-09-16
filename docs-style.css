@@ -13,7 +13,11 @@
   flex: 1;
   width: 40px;
   margin: auto;
- 
+}
+.component-icon {
+  flex: 1;
+  width: 160px;
+  margin: auto;
 }
 
 * {
